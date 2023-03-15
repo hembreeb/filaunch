@@ -138,7 +138,7 @@ import {
   getPrice,
   tokenFormat,
 } from "../script/util";
-import {type LaunchpadPriceResponse, HttpRequest } from "../script/request";
+import { type LaunchpadPriceResponse, HttpRequest } from "../script/request";
 import $ from "jquery";
 import { ElLoading } from "element3";
 export default {
