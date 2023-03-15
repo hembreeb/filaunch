@@ -1,0 +1,103 @@
+#launchpad_list_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-family: sans-serif;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+.launchpad_list_content_title,
+.launchpad_list_content_tokenList {
+  width: 90%;
+  align-items: center;
+  margin-top: 1%;
+  box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%);
+  background: white;
+  border-radius: 0.5rem;
+}
+
+.launchpad_list_content_title p {
+  margin: 0.5rem;
+  padding: 0;
+  font-size: 0.8rem;
+}
+
+.launchpad_list_content_title p:first-child {
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: calc(1.133rem + 0.996vw);
+}
+.launchpad_list_content_title p:last-child{
+  padding: 10px 3px 10px 3px;
+  display: inline-block;
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),var(--tw-ring-shadow, 0 0 #0000),var(--tw-shadow);
+  background-color: rgb(248 250 252 / var(--tw-bg-opacity)) !important ;
+}
+
+.launchpad_list_content_tokenList {
+  display: flex;
+  height: 80%;
+  margin: 7.5px 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  box-shadow: 0 0.5rem 1.2rem rgb(189 197 209 / 20%);
+  margin-top: 1%;
+}
+
+table {
+  display: flex;
+  width: 90%;
+  margin-top: 0.9rem;
+  flex-wrap: wrap;
+}
+tr {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-family: var(--bs-btn-font-family);
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+td {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18%;
+  padding: 1rem;
+}
+tr td:first-child {
+  display: flex;
+}
+tr td:first-child span {
+  display: flex;
+}
+tr td:first-child span:first-child {
+  position: relative;
+  margin-right: 0.5rem;
+}
+tr td:first-child span:last-child {
+  width: 40%;
+}
+
+.launchpad_list_content_tokenList_type {
+  display: flex;
+  width: 90%;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #c0c0bf;
+}
+.launchpad_list_content_tokenList_type span {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3rem;
+  font-weight: 400;
+  font-size: 0.8rem;
+
+}

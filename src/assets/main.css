@@ -1,0 +1,13 @@
+
+
+#app {
+  margin: 0;
+  padding: 0;
+}
+body {
+  /* background: #121d36;  */
+  /* color: #eaeaea; */
+  background: #fafbfd;
+  color: var(--bs-body-color);
+
+}
