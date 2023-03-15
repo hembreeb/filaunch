@@ -13,14 +13,6 @@ export default defineConfig({
   server: {
     host: "0.0.0.0",
     port: 8081,
-    // proxy: {
-    //   "/api": {
-    //     target: "https://filaunch.io",
-    //     changeOrigin: true,
-    //     secure: true,
-    //     rewrite: (path) => path.replace(/^\/api/, ""),
-    //   },
-    // },
     cors: false,
   },
 
