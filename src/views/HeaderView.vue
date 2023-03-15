@@ -166,5 +166,5 @@ export default {
 </script>
 
 <style scoped>
-@import "@/assets/header.css";
+@import "@/assets/css/header.css";
 </style>

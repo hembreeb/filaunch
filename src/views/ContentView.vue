@@ -40,7 +40,7 @@ import { mapGetters } from "vuex";
 import { getFairAuctionState, tokenFormat } from "../script/util";
 import { ethers } from "ethers";
 import ERC20JSON from "../script/contract/ERC20.json";
-import { HttpRequest, LaunchpadListResponse } from "../script/require";
+import { HttpRequest, type LaunchpadListResponse } from "../script/request";
 import { ElLoading } from "element3";
 export default {
   name: "ContentView",
@@ -146,5 +146,5 @@ export default {
 };
 </script>
 <style scoped>
-@import "@/assets/content.css";
+@import "@/assets/css/content.css";
 </style>

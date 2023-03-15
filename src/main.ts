@@ -2,7 +2,7 @@ import { createApp } from 'vue'
 import 'element3/lib/theme-chalk/index.css'
 import App from './App.vue'
 import router from './router'
-import './assets/main.css'
+import './assets/css/main.css'
 import {ElInput,ElSelect,ElOption,ElButton,ElDropdown,ElDropdownItem,ElDropdownMenu,ElMenu,ElMenuItem,ElSubmenu} from 'element3'
 import store from './script/store/index'
 const app = createApp(App)

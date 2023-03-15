@@ -138,7 +138,7 @@ import {
   getPrice,
   tokenFormat,
 } from "../script/util";
-import { LaunchpadPriceResponse, HttpRequest } from "../script/require";
+import {type LaunchpadPriceResponse, HttpRequest } from "../script/request";
 import $ from "jquery";
 import { ElLoading } from "element3";
 export default {
@@ -568,7 +568,7 @@ export default {
 };
 </script>
 <style scoped>
-@import "@/assets/launchpad.css";
+@import "@/assets/css/launchpad.css";
 </style>
 
 <style >

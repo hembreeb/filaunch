@@ -51,5 +51,5 @@ export default {
 </script>
 
 <style scoped>
-@import "@/assets/contracts.css";
+@import "@/assets/css/contracts.css";
 </style>
