@@ -15,9 +15,9 @@ export default [
   },
   {
     name: "mainnet",
-    chainId: 1,
+    chainId: 314,
     explore: "https://filfox.info/zh",
-    rpc: 'https://filecoin-hyperspace-testnet.rpc.thirdweb.com',
+    rpc: 'https://api.node.glif.io',
     symbol:"FIL"
   },
   {

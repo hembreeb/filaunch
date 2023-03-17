@@ -25,7 +25,6 @@
 }
 
 .connet {
-  /* justify-content: flex-end !important; */
   display: flex;
   padding: 10px 0 10px 0;
   cursor: pointer;
@@ -59,11 +58,9 @@
 .network_input {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
   align-content: center;
   color: #0485c3;
-  /* border: 1px solid red; */
   background: color;
 }
 

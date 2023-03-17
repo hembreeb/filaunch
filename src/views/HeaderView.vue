@@ -47,7 +47,7 @@ export default {
     return {
       account: "Connect",
       network: "Mainnet",
-      chainId: 1,
+      chainId: 314,
       activeIndex: 0,
       options: [
         {
@@ -72,6 +72,8 @@ export default {
     }),
   },
   mounted() {
+    this.accountsChanged();
+    this.chainChanged();
     this.setRpc(rpc[0].rpc);
     if (this.getAccount != null) {
       this.account = this.getAccount;
@@ -103,6 +105,26 @@ export default {
         }
       }
       this.setChainId(this.chainId);
+    },
+    accountsChanged() {
+      let self = this;
+      (window as any).ethereum.on(
+        "accountsChanged",
+        function (accounts: Array<string>) {
+          self.account = accounts[0];
+        }
+      );
+    },
+    chainChanged() {
+      (window as any).ethereum.on("chainChanged", (chainid: any) => {
+        let self = this;
+        this.options.forEach(function (v) {
+          if (v.chainId == parseInt(chainid, 16)) {
+            self.chainId = v.chainId;
+            self.network = v.label;
+          }
+        });
+      });
     },
     async connetWallet() {
       if (this.getAccount == null) {
